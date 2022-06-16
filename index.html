@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    
+
+    <title>Document</title>
+  </head>
+  <body>
+    
+      <div class="nav-color">
+      
+        <nav  id="navigation" >
+          <div>
+            <a class="logo " href="#home"><img src="images/brand.svg" /></a>
+          </div>
+          <div id="dl-menu" class="dl-menuwrapper" >
+            
+            <button class="dl-trigger">Open Menu</button>
+            <ul class="dl-menu">
+              <li><a href="#headerid">Home</a></li>
+              <li><a href="#about_us">About</a></li>
+              <li><a href="#exp">Experties</a></li>
+              <li><a href="#location">Contact</a></li>
+                </ul>
+              </div>
+          <div class="menu">
+            <ul >
+              <li><a href="#headerid">Home</a></li>
+              <li><a href="#about_us">About</a></li>
+              <li><a href="#exp">Experties</a></li>
+              <li><a href="#location">Contact</a></li>
+              <li><a href="#" class="button_1">Components</a></li>
+              <!--<button class="button_1"><a>Javi nam se</a></button>-->
+            </ul>
+          </div>
+          <script>
+            $(document).ready(function(){
+          $(window).bind('scroll', function() {
+          var navHeight = $( window ).height() - 70;
+            if ($(window).scrollTop() > navHeight) {
+              $('nav').addClass('fixed');
+            }
+            else {
+              $('nav').removeClass('fixed');
+            }
+          });
+          });
+          </script>
+          <script>$(document).ready(function(){
+    
+            $("a").on('click', function(event) {
+          
+             
+              if (this.hash !== "") {
+                
+                event.preventDefault();
+          
+                
+                var hash = this.hash;
+          
+                
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+             
+                  
+                  window.location.hash = hash;
+                });
+              } // 
+            });
+          });</script>
+          
+        </nav>
+      </div><!-- /dl-menuwrapper -->
+      
+      <script>
+        
+        $(function() {
+        
+          $('#dl-menu' ).dlmenu();
+        
+        });
+        
+        </script>
+      <header class="background-image-color">
+      <div class="header" id="headerid" ">
+        <div class="main-header"  >
+          <h1>Moj responzivan dizajn</h1>
+          <h3>My responsive design</h3>
+          <a href="#" class="button_1">Read more</a>
+        </div>
+        <div class="litle-header">
+          <div class="header-text">
+            <p>Are looking for</p>
+            <h4>Lorem ipsum</h4>
+            <p>
+              Incidunt soluta atque quis dolorum, dolorem facere non rerum.
+              Vero, necessitatibus similique?
+            </p>
+          </div>
+          <div class="header-contact-form">
+            <p><a>(123) 456-7890</a></p>
+            <p><a>info@website.com</a></p>
+          </div>
+          <div class="header-social-media">
+            <p>Social media</p>
+            <a href="#"> <img src="images/instagram.png" /></a>
+            <a href="#"><img src="images/facebook-logo.png" /></a>
+            <a href="#"><img src="images/map.png" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container-background-color">
+      <div class="container" id="about_us">
+        <div class="about_us_container">
+          <p><span>aliquam nobis consectetur.</span></p>
+          <h3>About Us</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nam,
+            facilis pariatur libero repellat magni distinctio dolores soluta
+            cupiditate inventore aspernatur aliquid a veniam! Quas dolorem optio
+            facilis libero accusantium.
+          </p>
+          <a href="#">Read more...</a>
+        </div>
+        <div class="calendar_container container_dec">
+          <a href="#"><img src="images/calendar.png" /></a>
+          <div class="container_inline">
+            <p class="container_highlight">15+</p>
+            <p>onsectetur perspiciatis</p>
+          </div>
+        </div>
+        <div class="smile_container container_dec">
+          <a href="#"><img src="images/smile.png" /></a>
+          <div class="container_inline">
+            <p class="container_highlight">15+</p>
+            <p>onsectetur perspiciatis</p>
+          </div>
+        </div>
+        <div class="star_container container_dec">
+          <a href="#"><img src="images/star.png" /></a>
+          <div class="container_inline">
+            <p class="container_highlight">15+</p>
+            <p>onsectetur perspiciatis</p>
+          </div>
+        </div>
+        <div class="people_container container_dec">
+          <a href="#"><img src="images/multiple-users-silhouette.png" /></a>
+          <div class="container_inline">
+            <p class="container_highlight">15+</p>
+            <p>onsectetur perspiciatis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experties" id="exp">
+      <div class="experties_name">
+        <p>Blandidasid askofa akfo</p>
+        <h3>Experties</h3>
+      </div>
+      <div class="experties_codding our_jobs">
+        <a href="#"><img src="images/img-5.jpg" /></a>
+        <div class="our_jobs">
+          <h4>Kodiranje i dizajniranje</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="experties_design our_jobs">
+        <a href="#"><img src="images/img-6.jpg" /></a>
+        <div class="our_jobs">
+          <h4>Web design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="experties_development our_jobs">
+        <a href="#"><img src="images/img-7.jpg" /></a>
+        <div class="our_jobs">
+          <h4>Graphic design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="products" id="products">
+      <h3>Our products</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="wrapper">
+      <div class="carousel owl-carousel">
+        <div class="card card-1">
+          <a href="#"><img src="images/img-1.jpg" /> </a>
+          <h3>Sed eligidni</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card card-2">
+          <a href="#"><img src="images/img-2.jpg" /> </a>
+          <h3>Sed eligidni</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card card-3">
+          <a href="#"><img src="images/img-3.jpg" /> </a>
+          <h3>Sed eligidni</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card card-4">
+          <a href="#"><img src="images/img-4.jpg" /> </a>
+          <h3>Sed eligidni</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".carousel").owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000 ms = 2 sec
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+
+          600: {
+            items: 2,
+            nav: false,
+          },
+
+          1000: {
+            items: 4,
+            nav: false,
+          },
+        },
+      });
+
+    </script>
+    
+      <div class="google_about" id="location">
+        <div class="about_us">
+          <span>Contact info</span>
+          <p>Contact us and we'll get back to you within 24 hours.</p>
+          <ul>
+            <li>12345 Fake ST NoWhere AB Country</li>
+            <li>info@website.com</li>
+            <li>(123) 456-7890</li>
+          </ul>
+        </div>
+        <div class="google_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22348.71900546171!2d18.662150014465073!3d45.558575233609254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7b91ccbaeb3%3A0x7dceaf98f6a8a24f!2zVHZyxJFhLCAzMTAwMCwgT3NpamVr!5e0!3m2!1shr!2shr!4v1654095169320!5m2!1shr!2shr"
+            style="border: 0"
+            allowfullscreen="yes"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+        </div>
+      </div>
+   
+    
+    <footer>
+      <p>2022© Izradio Kristian Lang</p>
+    </footer>
+  </body>
+</html>
